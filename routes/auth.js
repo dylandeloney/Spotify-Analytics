@@ -62,7 +62,9 @@ router.get("/callback", function (req, res) {
 					expires_in,
 				});
 
-				res.redirect(`http://localhost:3000/tracks/?${queryParams}`);
+				res.redirect(
+					`https://spotifyanalytics.netlify.app/tracks/?${queryParams}`
+				);
 			} else {
 				res.redirect(error);
 			}

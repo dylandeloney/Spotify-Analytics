@@ -23,7 +23,9 @@ function NavBar(props) {
 					Artists
 				</NavLink>
 				{!props.token ? (
-					<a className="navBtns" href="http://localhost:5000/login">
+					<a
+						className="navBtns"
+						href="https://spotifyanalytics.netlify.app/login">
 						Log in to Spotify
 					</a>
 				) : (
