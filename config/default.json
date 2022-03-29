@@ -1,5 +1,5 @@
 {
 	"CLIENT_ID": "c353b82c698449b8a0bd3fb4d4bc8421",
 	"CLIENT_SECRET": "d7b16be788db4a1dac39769da37fb13f",
-	"redirect_uri": "https://spotifyanalytics.netlify.app/callback"
+	"redirect_uri": "https://spotifyanalytics.herokuapp.com/callback"
 }

@@ -63,7 +63,7 @@ router.get("/callback", function (req, res) {
 				});
 
 				res.redirect(
-					`https://spotifyanalytics.netlify.app/tracks/?${queryParams}`
+					`https://spotifyanalytics.herokuapp.com/tracks/?${queryParams}`
 				);
 			} else {
 				res.redirect(error);

@@ -25,7 +25,7 @@ function NavBar(props) {
 				{!props.token ? (
 					<a
 						className="navBtns"
-						href="https://spotifyanalytics.netlify.app/login">
+						href="https://spotifyanalytics.herokuapp.com/login">
 						Log in to Spotify
 					</a>
 				) : (
