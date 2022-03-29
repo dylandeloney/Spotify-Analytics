@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
+
+body {
+	font-family: "Manrope", sans-serif;
+	color: #c4c4c4;
+	background-color: #182533;
+}
+
+.myContainer {
+	width: 80%;
+	margin: auto;
+	margin-top: 2rem;
+}
+
+.navBtns {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.75rem 0.75rem;
+	margin: 0.75rem 0rem;
+}
+
+.navBtns:hover {
+	color: #fff;
+}
+
+.pageHeaders {
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+}
+
+.albumCover {
+	height: 6rem;
+	width: 6rem;
+	margin: auto;
+}
+
+.tableHeaders {
+	border-bottom: solid 2rem transparent;
+	font-size: 1.8rem;
+	z-index: -1;
+}
+
+.tableData {
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.slideInputs {
+	display: inline-flex;
+	float: right;
+	margin-right: 5rem;
+}
+
+@media (max-width: 1024px) {
+	.myContainer {
+		width: 95%;
+	}
+	.tableHeaders {
+		font-size: 1.4rem;
+	}
+
+	.tableData {
+		font-size: 1rem;
+	}
+
+	.pageHeaders {
+		font-size: 2rem;
+		line-height: 2.25rem;
+	}
+}
+
+@media (max-width: 768px) {
+	tr th:nth-child(1),
+	tr td:nth-child(1) {
+		display: none;
+	}
+
+	.slideInputs {
+		margin-right: 0rem;
+		font-size: 0.9rem;
+		width: 50%;
+	}
+	.tableHeaders {
+		font-size: 1.3rem;
+	}
+
+	.tableData {
+		font-size: 0.9rem;
+	}
+
+	.albumCover {
+		height: 4rem;
+		width: 4rem;
+	}
+}
+
+@media (max-width: 425px) {
+	tr th:nth-child(1),
+	tr td:nth-child(1) {
+		display: none;
+	}
+	tr th:nth-child(5),
+	tr td:nth-child(5) {
+		display: none;
+	}
+
+	.albumCover {
+		height: 4rem;
+		width: 4rem;
+	}
+	.tableHeaders {
+		font-size: 1.2rem;
+	}
+
+	.tableData {
+		font-size: 0.8rem;
+	}
+
+	.slideInputs {
+		margin-right: 4rem;
+		font-size: 0.8rem;
+		float: none;
+	}
+}
